@@ -1,0 +1,11 @@
+file_format: "1"
+id: Enigma
+name: Enigma
+type: shield
+url: "https://github.com/yourusername/zmk-config"
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+  - studio
+# Note: Supports battery voltage monitoring on P0.31
