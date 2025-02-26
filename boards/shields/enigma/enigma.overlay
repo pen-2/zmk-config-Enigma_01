@@ -1,5 +1,7 @@
 /* ZMKのデバイスツリーに必要なヘッダーをインクルード */
 #include <dt-bindings/zmk/matrix-transform.h>
+#include "enigma-layouts.dtsi"
+
 
 / {
     // キーマトリクスの設定
