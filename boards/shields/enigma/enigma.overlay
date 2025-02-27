@@ -4,7 +4,6 @@
 #include "enigma-layouts.dtsi"
 
 / {
-    // キーマトリクスの設定
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
@@ -24,7 +23,6 @@
                     <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    // マトリクストランスフォームの設定
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         rows = <4>;
@@ -37,20 +35,16 @@
         >;
     };
 
-    // ZMK Studio用のUSB UART設定
     studio_usb: studio_usb {
         compatible = "zmk,studio-rpc-usb-uart";
     };
 
-    // 選択された設定をZMKに指定
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &enigma_default_layout; // enigma-layouts.dtsiで定義済み
-        zmk,studio-rpc = &studio_usb; // ZMK Studioサポート
+        zmk,physical-layout = &enigma_default_layout;
+        zmk,studio-rpc = &studio_usb;
     };
 
-    // バッテリー測定用のADC設定
     bat_adc: adc_battery {
         compatible = "zmk,battery-nrf-adc";
         io-channels = <&adc 31>;
@@ -58,7 +52,6 @@
     };
 };
 
-// ADCノードの有効化
 &adc {
     status = "okay";
 };
