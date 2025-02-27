@@ -37,13 +37,7 @@
         >;
     };
 
-    // 物理レイアウト（display-nameを追加）
-    enigma_physical_layout: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Enigma Layout"; // 必須プロパティを追加
-    };
-
-    // ZMK Studio用の設定
+    // ZMK Studio用のUSB UART設定
     studio_usb: studio_usb {
         compatible = "zmk,studio-rpc-usb-uart";
     };
@@ -52,8 +46,8 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &enigma_physical_layout;
-        zmk,studio-rpc = &studio_usb;
+        zmk,physical-layout = &enigma_default_layout; // enigma-layouts.dtsiで定義済み
+        zmk,studio-rpc = &studio_usb; // ZMK Studioサポート
     };
 
     // バッテリー測定用のADC設定
@@ -61,14 +55,6 @@
         compatible = "zmk,battery-nrf-adc";
         io-channels = <&adc 31>;
         vref-mv = <600>;
-    };
-
-    // QSPIノードのlabelを削除（ボード定義の上書き）
-    &qspi {
-        gd25q16@0 {
-            compatible = "nordic,qspi-nor";
-            // labelプロパティは記述しない（削除）
-        };
     };
 };
 
