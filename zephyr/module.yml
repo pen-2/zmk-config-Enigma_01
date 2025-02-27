@@ -1,4 +1,4 @@
-id: enigma
+id: Enigma
 name: zmk-keyboard-Enigma
 build:
   settings:
