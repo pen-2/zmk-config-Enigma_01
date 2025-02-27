@@ -7,21 +7,21 @@
     // キーマトリクスの設定
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "row2col"; // ダイオードの向き: 行から列
-        row-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>,   // row0: P0.02 (D0)
-                    <&gpio0 10 GPIO_ACTIVE_HIGH>,  // row1: P0.10 (D15)
-                    <&gpio1 12 GPIO_ACTIVE_HIGH>,  // row2: P1.12 (D7)
-                    <&gpio1 15 GPIO_ACTIVE_HIGH>;  // row3: P1.15 (D10)
-        col-gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col0: P0.15 (D11)
-                    <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col1: P0.03 (D1)
-                    <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col2: P0.19 (D12)
-                    <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col3: P0.28 (D2)
-                    <&gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col4: P1.01 (D13)
-                    <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col5: P0.29 (D3)
-                    <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col6: P0.09 (D14)
-                    <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col7: P0.04 (D4)
-                    <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, // col8: P1.13 (D8)
-                    <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // col9: P1.14 (D9)
+        diode-direction = "row2col";
+        row-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>,
+                    <&gpio0 10 GPIO_ACTIVE_HIGH>,
+                    <&gpio1 12 GPIO_ACTIVE_HIGH>,
+                    <&gpio1 15 GPIO_ACTIVE_HIGH>;
+        col-gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
     // マトリクストランスフォームの設定
@@ -37,13 +37,13 @@
         >;
     };
 
-    // 物理レイアウト（オプションだがドキュメントに基づき記述）
+    // 物理レイアウト（display-nameを追加）
     enigma_physical_layout: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        // layout-nodesはカスタムレイアウトが必要な場合に追加可能。ここでは省略
+        display-name = "Enigma Layout"; // 必須プロパティを追加
     };
 
-    // ZMK Studio用の設定（エラー対応）
+    // ZMK Studio用の設定
     studio_usb: studio_usb {
         compatible = "zmk,studio-rpc-usb-uart";
     };
@@ -52,15 +52,23 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &enigma_physical_layout; // ドキュメントに基づき更新
-        zmk,studio-rpc = &studio_usb; // ZMK Studioサポート
+        zmk,physical-layout = &enigma_physical_layout;
+        zmk,studio-rpc = &studio_usb;
     };
 
     // バッテリー測定用のADC設定
     bat_adc: adc_battery {
         compatible = "zmk,battery-nrf-adc";
-        io-channels = <&adc 31>; // P0.31 (BATピン)
-        vref-mv = <600>; // 内部リファレンス電圧
+        io-channels = <&adc 31>;
+        vref-mv = <600>;
+    };
+
+    // QSPIノードのlabelを削除（ボード定義の上書き）
+    &qspi {
+        gd25q16@0 {
+            compatible = "nordic,qspi-nor";
+            // labelプロパティは記述しない（削除）
+        };
     };
 };
 
