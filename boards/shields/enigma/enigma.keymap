@@ -7,7 +7,6 @@
 
         // レイヤー0（デフォルト）
         default_layer {
-            label = "Default";
             bindings = <
                 &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
                 &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
@@ -18,7 +17,6 @@
 
         // レイヤー1
         layer_1 {
-            label = "Layer 1";
             bindings = <
                 &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
@@ -29,7 +27,6 @@
 
         // レイヤー2
         layer_2 {
-            label = "Layer 2";
             bindings = <
                 &kp 9 &none &none &none &none &none &none &none &none &none
                 &none &none &none &none &none &none &none &none &none &none
