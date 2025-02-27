@@ -1,4 +1,4 @@
-name: Enigma
+name: zmk-keyboard-Enigma
 build:
   settings:
     board_root: .
