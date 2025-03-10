@@ -1,7 +1,19 @@
-#include <dt-bindings/zmk/keys.h>  // 公式推奨のヘッダー
-#include <behaviors.dtsi>           // ビヘイビア（&mo など）を使うために必要
+#include <dt-bindings/zmk/keys.h>    // 公式推奨のヘッダー
+#include <behaviors.dtsi>            // ビヘイビア（&mo など）を使うために必要
+#include <dt-bindings/zmk/pointing.h> // マウススクロール（SCRL_UP, SCRL_DOWN）用
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100 // スクロールのデフォルト値
 
 / {
+    behaviors {
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -11,8 +23,9 @@
                 &studio_unlock &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
                 &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI
                 &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH
-                &kp ESC &kp TAB &kp SPC &kp BSPC &mo 1 &kp ENTER &mo 2 &kp LEFT &kp RIGHT &kp UP // RC(3,4)=&mo 1, RC(3,6)=&mo 2
+                &kp ESC &kp TAB &kp SPC &kp BSPC &mo 1 &kp ENTER &mo 2 &kp LEFT &kp RIGHT &kp UP
             >;
+            sensor-bindings = <&scroll_up_down>; // ロータリーエンコーダーでスクロール
         };
 
         // レイヤー1
@@ -20,9 +33,10 @@
             bindings = <
                 &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-                &kp F11 &kp F12 &none &none &none &none &none &none &none &none &none
+                &kp F11 &kp F12 &none &none &none &none &none &none &none &none
                 &kp LCTL &kp LALT &kp LSHFT &kp LGUI &none &none &none &none &none &none
             >;
+            sensor-bindings = <&scroll_up_down>; // ロータリーエンコーダーでスクロール
         };
 
         // レイヤー2
@@ -33,6 +47,7 @@
                 &none &none &none &none &none &none &none &none &none &none
                 &none &none &none &none &none &none &none &none &none &none
             >;
+            sensor-bindings = <&scroll_up_down>; // ロータリーエンコーダーでスクロール
         };
     };
 };
