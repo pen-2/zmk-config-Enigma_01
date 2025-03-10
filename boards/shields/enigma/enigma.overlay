@@ -57,7 +57,7 @@
 
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &enigma_default_layout;
+        zmk,physical-layout = &enigma_layout_a; // デフォルトレイアウト。他に &enigma_layout_b と &enigma_layout_c も存在
         zmk,studio-rpc = &studio_usb;
     };
 
