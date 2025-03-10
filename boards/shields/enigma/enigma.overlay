@@ -61,11 +61,11 @@
         zmk,studio-rpc = &studio_usb;
     };
 
-    // bat_adc: adc_battery {
-        // compatible = "zmk,battery-nrf-adc";
-        // io-channels = <&adc 31>;
-        // vref-mv = <600>;
-    // };
+    bat_adc: adc_battery {
+        compatible = "zmk,battery-nrf-adc";
+        io-channels = <&adc 31>;
+        vref-mv = <600>;
+    };
 };
 
 // &adc {
