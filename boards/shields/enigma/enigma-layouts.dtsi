@@ -1,11 +1,10 @@
-// 物理レイアウト用の定義を取り込む（ZMK Studio対応に必須）
-#include <physical_layouts.dtsi>
+#include <physical_layouts.dtsi>// 物理レイアウト用の定義を取り込む（ZMK Studio対応に必須）
 
 / {
     // 配置A: デフォルトの物理レイアウト (ロータリーエンコーダー+キースイッチ39)
     enigma_layout_a: enigma_layout_a {
         compatible = "zmk,physical-layout";
-        display-name = "Enigma Layout A"; // ZMK Studioで表示される名前
+        display-name = "Enigma Layout A";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
