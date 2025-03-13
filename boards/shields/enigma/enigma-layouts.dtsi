@@ -11,6 +11,18 @@
 
         keys = <
             // row1: キー0〜9 (1.0u x 10個)
+            &key_physical_attrs 100 100 100 0 0 0 0  // RC(0,1)
+            &key_physical_attrs 100 100 200 0 0 0 0  // RC(0,2)
+            &key_physical_attrs 100 100 300 0 0 0 0  // RC(0,3)
+            &key_physical_attrs 100 100 400 0 0 0 0  // RC(0,4)
+            &key_physical_attrs 100 100 500 0 0 0 0  // RC(0,5)
+            &key_physical_attrs 100 100 600 0 0 0 0  // RC(0,6)
+            &key_physical_attrs 100 100 700 0 0 0 0  // RC(0,7)
+            &key_physical_attrs 100 100 800 0 0 0 0  // RC(0,8)
+            &key_physical_attrs 100 100 900 0 0 0 0  // RC(0,9)
+            &key_physical_attrs 100 100 1000 0 0 0 0 // RC(1,10)
+
+            // row2: キー10〜19 (1.0u x 10個)
             &key_physical_attrs 100 100 100 100 0 0 0  // RC(1,1)
             &key_physical_attrs 100 100 200 100 0 0 0  // RC(1,2)
             &key_physical_attrs 100 100 300 100 0 0 0  // RC(1,3)
@@ -20,9 +32,9 @@
             &key_physical_attrs 100 100 700 100 0 0 0  // RC(1,7)
             &key_physical_attrs 100 100 800 100 0 0 0  // RC(1,8)
             &key_physical_attrs 100 100 900 100 0 0 0  // RC(1,9)
-            &key_physical_attrs 100 100 1000 100 0 0 0 // RC(1,10)
+            &key_physical_attrs 100 100 1000 100 0 0 0 // RC(2,10)
 
-            // row2: キー10〜19 (1.0u x 10個)
+            // row3: キー20〜29 (1.0u x 10個)
             &key_physical_attrs 100 100 100 200 0 0 0  // RC(2,1)
             &key_physical_attrs 100 100 200 200 0 0 0  // RC(2,2)
             &key_physical_attrs 100 100 300 200 0 0 0  // RC(2,3)
@@ -32,30 +44,18 @@
             &key_physical_attrs 100 100 700 200 0 0 0  // RC(2,7)
             &key_physical_attrs 100 100 800 200 0 0 0  // RC(2,8)
             &key_physical_attrs 100 100 900 200 0 0 0  // RC(2,9)
-            &key_physical_attrs 100 100 1000 200 0 0 0 // RC(2,10)
-
-            // row3: キー20〜29 (1.0u x 10個)
-            &key_physical_attrs 100 100 100 300 0 0 0  // RC(3,1)
-            &key_physical_attrs 100 100 200 300 0 0 0  // RC(3,2)
-            &key_physical_attrs 100 100 300 300 0 0 0  // RC(3,3)
-            &key_physical_attrs 100 100 400 300 0 0 0  // RC(3,4)
-            &key_physical_attrs 100 100 500 300 0 0 0  // RC(3,5)
-            &key_physical_attrs 100 100 600 300 0 0 0  // RC(3,6)
-            &key_physical_attrs 100 100 700 300 0 0 0  // RC(3,7)
-            &key_physical_attrs 100 100 800 300 0 0 0  // RC(3,8)
-            &key_physical_attrs 100 100 900 300 0 0 0  // RC(3,9)
-            &key_physical_attrs 100 100 1000 300 0 0 0 // RC(3,10)
+            &key_physical_attrs 100 100 1000 200 0 0 0 // RC(3,10)
 
             // row4: キー30〜38 (1.0u x 7個 + 1.5u x 2個 = 9個)
-            &key_physical_attrs 100 100 100 400 0 0 0  // RC(4,1) 1.0u
-            &key_physical_attrs 100 100 200 400 0 0 0  // RC(4,2) 1.0u
-            &key_physical_attrs 100 100 300 400 0 0 0  // RC(4,3) 1.0u
-            &key_physical_attrs 150 100 400 400 0 0 0  // RC(4,4) 1.5u
-            &key_physical_attrs 100 100 550 400 0 0 0  // RC(4,5) 1.0u
-            &key_physical_attrs 150 100 650 400 0 0 0  // RC(4,6) 1.5u
-            &key_physical_attrs 100 100 800 400 0 0 0  // RC(4,7) 1.0u
-            &key_physical_attrs 100 100 900 400 0 0 0 // RC(4,8) 1.0u
-            &key_physical_attrs 100 100 1000 400 0 0 0 // RC(4,9) 1.0u
+            &key_physical_attrs 100 100 100 300 0 0 0  // RC(3,1) 1.0u
+            &key_physical_attrs 100 100 200 300 0 0 0  // RC(3,2) 1.0u
+            &key_physical_attrs 100 100 300 300 0 0 0  // RC(3,3) 1.0u
+            &key_physical_attrs 150 100 400 300 0 0 0  // RC(3,4) 1.5u
+            &key_physical_attrs 100 100 550 300 0 0 0  // RC(3,5) 1.0u
+            &key_physical_attrs 150 100 650 300 0 0 0  // RC(3,6) 1.5u
+            &key_physical_attrs 100 100 800 300 0 0 0  // RC(3,7) 1.0u
+            &key_physical_attrs 100 100 900 300 0 0 0 // RC(4,8) 1.0u
+            &key_physical_attrs 100 100 1000 300 0 0 0 // RC(4,9) 1.0u
             // RC(4,10) はなし
         >;
     };
@@ -69,6 +69,18 @@
 
         keys = <
             // row1: キー0〜9 (1.0u x 10個)
+            &key_physical_attrs 100 100 100 0 0 0 0  // RC(0,1)
+            &key_physical_attrs 100 100 200 0 0 0 0  // RC(0,2)
+            &key_physical_attrs 100 100 300 0 0 0 0  // RC(0,3)
+            &key_physical_attrs 100 100 400 0 0 0 0  // RC(0,4)
+            &key_physical_attrs 100 100 500 0 0 0 0  // RC(0,5)
+            &key_physical_attrs 100 100 600 0 0 0 0  // RC(0,6)
+            &key_physical_attrs 100 100 700 0 0 0 0  // RC(0,7)
+            &key_physical_attrs 100 100 800 0 0 0 0  // RC(0,8)
+            &key_physical_attrs 100 100 900 0 0 0 0  // RC(0,9)
+            &key_physical_attrs 100 100 1000 0 0 0 0 // RC(1,10)
+
+            // row2: キー10〜19 (1.0u x 10個)
             &key_physical_attrs 100 100 100 100 0 0 0  // RC(1,1)
             &key_physical_attrs 100 100 200 100 0 0 0  // RC(1,2)
             &key_physical_attrs 100 100 300 100 0 0 0  // RC(1,3)
@@ -78,9 +90,9 @@
             &key_physical_attrs 100 100 700 100 0 0 0  // RC(1,7)
             &key_physical_attrs 100 100 800 100 0 0 0  // RC(1,8)
             &key_physical_attrs 100 100 900 100 0 0 0  // RC(1,9)
-            &key_physical_attrs 100 100 1000 100 0 0 0 // RC(1,10)
+            &key_physical_attrs 100 100 1000 100 0 0 0 // RC(2,10)
 
-            // row2: キー10〜19 (1.0u x 10個)
+            // row3: キー20〜29 (1.0u x 10個)
             &key_physical_attrs 100 100 100 200 0 0 0  // RC(2,1)
             &key_physical_attrs 100 100 200 200 0 0 0  // RC(2,2)
             &key_physical_attrs 100 100 300 200 0 0 0  // RC(2,3)
@@ -90,30 +102,18 @@
             &key_physical_attrs 100 100 700 200 0 0 0  // RC(2,7)
             &key_physical_attrs 100 100 800 200 0 0 0  // RC(2,8)
             &key_physical_attrs 100 100 900 200 0 0 0  // RC(2,9)
-            &key_physical_attrs 100 100 1000 200 0 0 0 // RC(2,10)
-
-            // row3: キー20〜29 (1.0u x 10個)
-            &key_physical_attrs 100 100 100 300 0 0 0  // RC(3,1)
-            &key_physical_attrs 100 100 200 300 0 0 0  // RC(3,2)
-            &key_physical_attrs 100 100 300 300 0 0 0  // RC(3,3)
-            &key_physical_attrs 100 100 400 300 0 0 0  // RC(3,4)
-            &key_physical_attrs 100 100 500 300 0 0 0  // RC(3,5)
-            &key_physical_attrs 100 100 600 300 0 0 0  // RC(3,6)
-            &key_physical_attrs 100 100 700 300 0 0 0  // RC(3,7)
-            &key_physical_attrs 100 100 800 300 0 0 0  // RC(3,8)
-            &key_physical_attrs 100 100 900 300 0 0 0  // RC(3,9)
-            &key_physical_attrs 100 100 1000 300 0 0 0 // RC(3,10)
+            &key_physical_attrs 100 100 1000 200 0 0 0 // RC(3,10)
 
             // row4: キー30〜38 (1.0u x 8個 + 2.0u x 1個 = 9個)
-            &key_physical_attrs 100 100 100 400 0 0 0  // RC(4,1) 1.0u
-            &key_physical_attrs 100 100 200 400 0 0 0  // RC(4,2) 1.0u
-            &key_physical_attrs 100 100 300 400 0 0 0  // RC(4,3) 1.0u
-            &key_physical_attrs 100 100 400 400 0 0 0  // RC(4,4) 1.0u
-            &key_physical_attrs 200 100 500 400 0 0 0  // RC(4,5) 2.0u
-            &key_physical_attrs 100 100 700 400 0 0 0  // RC(4,6) 1.0u
-            &key_physical_attrs 100 100 800 400 0 0 0  // RC(4,7) 1.0u
-            &key_physical_attrs 100 100 900 400 0 0 0 // RC(4,8) 1.0u
-            &key_physical_attrs 100 100 1000 400 0 0 0 // RC(4,9) 1.0u
+            &key_physical_attrs 100 100 100 300 0 0 0  // RC(3,1) 1.0u
+            &key_physical_attrs 100 100 200 300 0 0 0  // RC(3,2) 1.0u
+            &key_physical_attrs 100 100 300 300 0 0 0  // RC(3,3) 1.0u
+            &key_physical_attrs 100 100 400 300 0 0 0  // RC(3,4) 1.0u
+            &key_physical_attrs 200 100 500 300 0 0 0  // RC(3,5) 2.0u
+            &key_physical_attrs 100 100 700 300 0 0 0  // RC(3,6) 1.0u
+            &key_physical_attrs 100 100 800 300 0 0 0  // RC(3,7) 1.0u
+            &key_physical_attrs 100 100 900 300 0 0 0 // RC(4,8) 1.0u
+            &key_physical_attrs 100 100 1000 300 0 0 0 // RC(4,9) 1.0u
             // RC(4,10) はなし
         >;
     };
@@ -127,6 +127,18 @@
 
         keys = <
             // row1: キー0〜9 (1.0u x 10個)
+            &key_physical_attrs 100 100 100 0 0 0 0  // RC(0,1)
+            &key_physical_attrs 100 100 200 0 0 0 0  // RC(0,2)
+            &key_physical_attrs 100 100 300 0 0 0 0  // RC(0,3)
+            &key_physical_attrs 100 100 400 0 0 0 0  // RC(0,4)
+            &key_physical_attrs 100 100 500 0 0 0 0  // RC(0,5)
+            &key_physical_attrs 100 100 600 0 0 0 0  // RC(0,6)
+            &key_physical_attrs 100 100 700 0 0 0 0  // RC(0,7)
+            &key_physical_attrs 100 100 800 0 0 0 0  // RC(0,8)
+            &key_physical_attrs 100 100 900 0 0 0 0  // RC(0,9)
+            &key_physical_attrs 100 100 1000 0 0 0 0 // RC(1,10)
+
+            // row2: キー10〜19 (1.0u x 10個)
             &key_physical_attrs 100 100 100 100 0 0 0  // RC(1,1)
             &key_physical_attrs 100 100 200 100 0 0 0  // RC(1,2)
             &key_physical_attrs 100 100 300 100 0 0 0  // RC(1,3)
@@ -136,9 +148,9 @@
             &key_physical_attrs 100 100 700 100 0 0 0  // RC(1,7)
             &key_physical_attrs 100 100 800 100 0 0 0  // RC(1,8)
             &key_physical_attrs 100 100 900 100 0 0 0  // RC(1,9)
-            &key_physical_attrs 100 100 1000 100 0 0 0 // RC(1,10)
+            &key_physical_attrs 100 100 1000 100 0 0 0 // RC(2,10)
 
-            // row2: キー10〜19 (1.0u x 10個)
+            // row3: キー20〜29 (1.0u x 10個)
             &key_physical_attrs 100 100 100 200 0 0 0  // RC(2,1)
             &key_physical_attrs 100 100 200 200 0 0 0  // RC(2,2)
             &key_physical_attrs 100 100 300 200 0 0 0  // RC(2,3)
@@ -148,9 +160,9 @@
             &key_physical_attrs 100 100 700 200 0 0 0  // RC(2,7)
             &key_physical_attrs 100 100 800 200 0 0 0  // RC(2,8)
             &key_physical_attrs 100 100 900 200 0 0 0  // RC(2,9)
-            &key_physical_attrs 100 100 1000 200 0 0 0 // RC(2,10)
+            &key_physical_attrs 100 100 1000 200 0 0 0 // RC(3,10)
 
-            // row3: キー20〜29 (1.0u x 10個)
+            // row4: キー30〜39 (1.0u x 10個)
             &key_physical_attrs 100 100 100 300 0 0 0  // RC(3,1)
             &key_physical_attrs 100 100 200 300 0 0 0  // RC(3,2)
             &key_physical_attrs 100 100 300 300 0 0 0  // RC(3,3)
@@ -160,19 +172,7 @@
             &key_physical_attrs 100 100 700 300 0 0 0  // RC(3,7)
             &key_physical_attrs 100 100 800 300 0 0 0  // RC(3,8)
             &key_physical_attrs 100 100 900 300 0 0 0  // RC(3,9)
-            &key_physical_attrs 100 100 1000 300 0 0 0 // RC(3,10)
-
-            // row4: キー30〜39 (1.0u x 10個)
-            &key_physical_attrs 100 100 100 400 0 0 0  // RC(4,1)
-            &key_physical_attrs 100 100 200 400 0 0 0  // RC(4,2)
-            &key_physical_attrs 100 100 300 400 0 0 0  // RC(4,3)
-            &key_physical_attrs 100 100 400 400 0 0 0  // RC(4,4)
-            &key_physical_attrs 100 100 500 400 0 0 0  // RC(4,5)
-            &key_physical_attrs 100 100 600 400 0 0 0  // RC(4,6)
-            &key_physical_attrs 100 100 700 400 0 0 0  // RC(4,7)
-            &key_physical_attrs 100 100 800 400 0 0 0  // RC(4,8)
-            &key_physical_attrs 100 100 900 400 0 0 0  // RC(4,9)
-            &key_physical_attrs 100 100 1000 400 0 0 0 // RC(4,10)
+            &key_physical_attrs 100 100 1000 300 0 0 0 // RC(4,10)
         >;
     };
 };
