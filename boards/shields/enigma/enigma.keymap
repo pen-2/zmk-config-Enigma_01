@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/keys.h>    // 公式推奨のヘッダー
+#include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>            // ビヘイビア（&mo など）を使うために必要
 #include <dt-bindings/zmk/pointing.h> // マウススクロール（SCRL_UP, SCRL_DOWN, SCRL_LEFT, SCRL_RIGHT）用
 
@@ -34,7 +34,7 @@
                 &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH
                 &kp ESC &kp TAB &kp SPC &kp BSPC &mo 1 &kp ENTER &mo 2 &kp LEFT &kp RIGHT &kp UP
             >;
-            sensor-bindings = <&scroll_up_down>; // 上下スクロール
+            sensor-bindings = <&scroll_up_down>; 
         };
 
         // レイヤー1: 上下スクロール
@@ -45,7 +45,7 @@
                 &kp F11 &kp F12 &none &none &none &none &none &none &none &none
                 &kp LCTL &kp LALT &kp LSHFT &kp LGUI &none &none &none &none &none &none
             >;
-            sensor-bindings = <&scroll_up_down>; // 上下スクロール
+            sensor-bindings = <&scroll_up_down>; 
         };
 
         // レイヤー2: 左右スクロール
@@ -56,7 +56,7 @@
                 &none &none &none &none &none &none &none &none &none &none
                 &none &none &none &none &none &none &none &none &none &none
             >;
-            sensor-bindings = <&scroll_left_right>; // 左右スクロール
+            sensor-bindings = <&scroll_left_right>; 
         };
     };
 };
