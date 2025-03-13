@@ -10,9 +10,6 @@
         kscan = <&kscan0>;
 
         keys = <
-            // row0: ロータリーエンコーダー (1個) rc(1,1)の真上、70x70
-            &key_physical_attrs 70 70 100 30 0 0 0  // RC(0,1) ロータリーエンコーダー (中心: x=100, y=30)
-
             // row1: キー0〜9 (1.0u x 10個)
             &key_physical_attrs 100 100 100 100 0 0 0  // RC(1,1)
             &key_physical_attrs 100 100 200 100 0 0 0  // RC(1,2)
@@ -71,9 +68,6 @@
         kscan = <&kscan0>;
 
         keys = <
-            // row0: ロータリーエンコーダー (1個) rc(1,1)の真上、70x70
-            &key_physical_attrs 70 70 100 30 0 0 0  // RC(0,1) ロータリーエンコーダー (中心: x=100, y=30)
-
             // row1: キー0〜9 (1.0u x 10個)
             &key_physical_attrs 100 100 100 100 0 0 0  // RC(1,1)
             &key_physical_attrs 100 100 200 100 0 0 0  // RC(1,2)
@@ -132,9 +126,6 @@
         kscan = <&kscan0>;
 
         keys = <
-            // row0: ロータリーエンコーダー (1個) rc(1,1)の真上、70x70
-            &key_physical_attrs 70 70 100 30 0 0 0  // RC(0,1) ロータリーエンコーダー (中心: x=100, y=30)
-
             // row1: キー0〜9 (1.0u x 10個)
             &key_physical_attrs 100 100 100 100 0 0 0  // RC(1,1)
             &key_physical_attrs 100 100 200 100 0 0 0  // RC(1,2)
