@@ -4,7 +4,7 @@
     // 配置A: デフォルトの物理レイアウト (ロータリーエンコーダー+キースイッチ39)
     enigma_layout_a: enigma_layout_a {
         compatible = "zmk,physical-layout";
-        display-name = "Enigma Layout A";
+        display-name = "Enigma_01 Layout A";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
@@ -62,7 +62,7 @@
     // 配置B: (ロータリーエンコーダー+キースイッチ39)
     enigma_layout_b: enigma_layout_b {
         compatible = "zmk,physical-layout";
-        display-name = "Enigma Layout B";
+        display-name = "Enigma_01 Layout B";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
@@ -120,7 +120,7 @@
     // 配置C: (ロータリーエンコーダー+キースイッチ40)
     enigma_layout_c: enigma_layout_c {
         compatible = "zmk,physical-layout";
-        display-name = "Enigma Layout C";
+        display-name = "Enigma_01 Layout C";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
