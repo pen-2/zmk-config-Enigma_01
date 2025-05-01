@@ -46,7 +46,7 @@
         {"row": 4, "col": 8, "x": 8, "y": 4},
         {"row": 4, "col": 9, "x": 9, "y": 4}
       ]
-    }
+    },
     "enigma_layout_b": {
       "name": "Enigma_01 Layout B",
       "layout": [
@@ -93,7 +93,7 @@
         {"row": 4, "col": 8, "x": 8, "y": 4},
         {"row": 4, "col": 9, "x": 9, "y": 4}
       ]
-    }
+    },
     "enigma_layout_c": {
       "name": "Enigma_01 Layout C",
       "layout": [
