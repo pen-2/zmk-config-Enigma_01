@@ -58,11 +58,10 @@
             &key_physical_attrs 100 100 900 400 0 0 0  // RC(6,3)
         >;
     };
-
     // 配置A: デフォルトの物理レイアウト (キースイッチ42)
-    enigma_layout_a: enigma_layout_a {
+    enigma_layout_a: enigma_layout_b {
         compatible = "zmk,physical-layout";
-        display-name = "Enigma_01 Layout A";
+        display-name = "Enigma_01 Layout B";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
@@ -115,11 +114,10 @@
             &key_physical_attrs 100 100 900 400 0 0 0  // RC(6,3)
         >;
     };
-
     // 配置A: デフォルトの物理レイアウト (キースイッチ42)
-    enigma_layout_a: enigma_layout_a {
+    enigma_layout_a: enigma_layout_c {
         compatible = "zmk,physical-layout";
-        display-name = "Enigma_01 Layout A";
+        display-name = "Enigma_01 Layout C";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
