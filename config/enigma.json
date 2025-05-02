@@ -144,7 +144,7 @@
   "sensors": [
     {
       "ref": "encoder_0",
-      "name": "Rotary Encoder",
+      "name": "Rotary_Encoder",
       "identifier": "encoder_0",
       "compatible": "alps,ec11",
       "enabled": true
