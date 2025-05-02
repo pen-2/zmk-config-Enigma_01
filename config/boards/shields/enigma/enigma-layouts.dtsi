@@ -53,6 +53,7 @@
             &key_physical_attrs 100 100 900 400 0 0 0  // RC(6,3)
         >;
     };
+
     // 親指キー1.5u
     enigma_layout_b: enigma_layout_b {
         compatible = "zmk,physical-layout";
@@ -104,6 +105,7 @@
             &key_physical_attrs 100 100 900 400 0 0 0  // RC(6,3)
         >;
     };
+
     // 親指キー2.0u
     enigma_layout_c: enigma_layout_c {
         compatible = "zmk,physical-layout";
