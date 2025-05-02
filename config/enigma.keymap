@@ -26,8 +26,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // レイヤー0（デフォルト）: 上下スクロール
-
         default_layer {
             bindings = <
          &kp N1   &kp N2
@@ -36,11 +34,8 @@
 &kp Z    &kp X    &kp C    &kp V     &kp B  &kp N      &kp M  &kp COMMA  &kp DOT    &kp SLASH
 &kp TAB  &kp TAB  &kp SPC  &kp BSPC  &mo 1  &kp ENTER  &mo 2  &kp LEFT   &kp RIGHT  &kp UP
             >;
-
             sensor-bindings = <&scroll_up_down>;
         };
-
-        // レイヤー1: 上下スクロール
 
         layer_1 {
             bindings = <
@@ -50,11 +45,8 @@
 &kp Z    &kp X    &kp C    &kp V     &kp B  &kp N      &kp M  &kp COMMA  &kp DOT    &kp SLASH
 &kp ESC  &kp TAB  &kp SPC  &kp BSPC  &mo 1  &kp ENTER  &mo 2  &kp LEFT   &kp RIGHT  &kp UP
             >;
-
             sensor-bindings = <&scroll_up_down>;
         };
-
-        // レイヤー2: 左右スクロール
 
         layer_2 {
             bindings = <
@@ -64,7 +56,6 @@
 &kp Z    &kp X    &kp C    &kp V     &kp B  &kp N      &kp M  &kp COMMA  &kp DOT    &kp SLASH
 &kp ESC  &kp TAB  &kp SPC  &kp BSPC  &mo 1  &kp ENTER  &mo 2  &kp LEFT   &kp RIGHT  &kp UP
             >;
-
             sensor-bindings = <&scroll_left_right>;
         };
     };
