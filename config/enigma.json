@@ -143,9 +143,9 @@
   },
   "sensors": [
     {
-      "ref": "enigma_encoder",
-      "name": "encoder_enigma",
-      "identifier": "encoder_enigma",
+      "ref": "encoder_0",
+      "name": "Rotary Encoder",
+      "identifier": "encoder_0",
       "compatible": "alps,ec11",
       "enabled": true
     }
