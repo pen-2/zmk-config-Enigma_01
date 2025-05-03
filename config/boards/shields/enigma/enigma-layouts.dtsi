@@ -157,42 +157,41 @@
             &key_physical_attrs 100 100 900 400 0 0 0  // RC(6,3)
         >;
     };
-
-    keypad_position_map {
-        compatible = "zmk,physical-layout-position-map";
-        complete; // すべてのキー位置を明示的に定義（欠落キーは-1で指定）
-
-        enigma_layout_a_map: enigma_layout_a {
-            physical-layout = <&enigma_layout_a>;
-            positions = <
-                0  1                                // 1行目：2キー
-                2  3  4  5  6  7  8  9 10 11       // 2行目：10キー
-               12 13 14 15 16 17 18 19 20 21       // 3行目：10キー
-               22 23 24 25 26 27 28 29 30 31       // 4行目：10キー
-               32 33 34 35 36 37 38 39 40 41       // 5行目：10キー
-            >;
-        };
-
-        enigma_layout_b_map: enigma_layout_b {
-            physical-layout = <&enigma_layout_b>;
-            positions = <
-                0  1                                // 1行目：2キー
-                2  3  4  5  6  7  8  9 10 11       // 2行目：10キー
-               12 13 14 15 16 17 18 19 20 21       // 3行目：10キー
-               22 23 24 25 26 27 28 29 30 31       // 4行目：10キー
-               32 33 34 35 36 -1 37 38 39 40       // 5行目：9キー（インデックス37欠落）
-            >;
-        };
-
-        enigma_layout_c_map: enigma_layout_c {
-            physical-layout = <&enigma_layout_c>;
-            positions = <
-                0  1                                // 1行目：2キー
-                2  3  4  5  6  7  8  9 10 11       // 2行目：10キー
-               12 13 14 15 16 17 18 19 20 21       // 3行目：10キー
-               22 23 24 25 26 27 28 29 30 31       // 4行目：10キー
-               32 33 34 35 36 -1 37 38 39 40       // 5行目：9キー（インデックス37欠落）
-            >;
-        };
+    position_map {
+		    compatible = "zmk,physical-layout-position-map";
+		    complete;
+		
+		    enigma_layout_a {
+			      physical-layout = <& enigma_layout_a>;
+			      positions
+			      = < 0   1>
+			      , < 2  3  4  5  6  7  8  9 10 11>
+		        	, <12 13 14 15 16 17 18 19 20 21>
+			      , <22 23 24 25 26 27 28 29 30 31>
+			      , <32 33 34 35 36 37 38 39 40 41>
+			      ;
+		    };
+		
+		    enigma_layout_b {
+			      physical-layout = <& enigma_layout_b>;
+			      positions
+			      = < 0  1>
+			      , < 2  3  4  5  6  7  8  9 10 11>
+			      , <12 13 14 15 16 17 18 19 20 21>
+			      , <22 23 24 25 26 27 28 29 30 31>
+			      , <32 33 34 35   36  38 39 40 41>
+			      ;
+		    };
+		
+		    enigma_layout_c {
+			      physical-layout = <& enigma_layout_c>;
+			      positions
+			      = < 0   1>
+			      , < 2  3  4  5  6  7  8  9 10 11>
+			      , <12 13 14 15 16 17 18 19 20 21>
+			      , <22 23 24 25 26 27 28 29 30 31>
+			      , <32 33 34 35   36  38 39 40 41>
+			      ;
+		    };
     };
 };
