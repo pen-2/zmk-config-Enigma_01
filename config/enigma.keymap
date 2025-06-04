@@ -21,6 +21,30 @@
 
             tap-ms = <20>;
         };
+
+        arrow_left_right: behavior_sensor_rotate_arrow_le {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp RIGHT>;
+
+            tap-ms = <20>;
+        };
+
+        arrow_up_down: behavior_sensor_rotate_arrow_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp UP>, <&kp DOWN>;
+
+            tap-ms = <20>;
+        };
+
+        page_up_down: behavior_sensor_rotate_page_up_ {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PAGE_UP>, <&kp PAGE_DOWN>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
