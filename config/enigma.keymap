@@ -64,11 +64,11 @@
 
         layer_1 {
             bindings = <
-           &kp N3     &kp N4
-&kp Q      &kp W      &kp E      &kp R        &kp T            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
-&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)    &kp G            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
-&kp LCTRL  &kp TAB    &kp SPC    &lt 1 SPACE  &kp BACKSPACE    &kp ENTER        &lt 2 ENTER      &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
+            &kp K_UNDO    &kp K_UNDO
+&kp K_UNDO  &kp K_UNDO    &kp K_UNDO    &kp K_UNDO   &kp K_UNDO       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
+&kp LC(A)   &kp LC(S)     &kp LC(D)     &kp LC(F)    &kp K_UNDO       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
+&kp LC(Z)   &kp LC(X)     &kp LC(C)     &kp LC(V)    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp BACKSPACE    &kp ENTER        &lt 2 ENTER      &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&arrow_left_right>;
@@ -76,14 +76,14 @@
 
         layer_2 {
             bindings = <
-                  &kp N5            &kp N6
+                  &kp K_UNDO        &kp K_UNDO
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
-&kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &kp H             &kp J             &kp K             &kp L             &kp SEMI
-&kp F11           &kp F12           &kp C             &kp V             &kp B             &kp N             &kp M             &kp COMMA         &kp DOT           &kp SLASH
-&kp ESC           &kp TAB           &kp SPC           &lt 1 SPACE       &kp BACKSPACE     &kp ENTER         &lt 2 ENTER       &kp LEFT          &kp RIGHT         &kp UP
+&kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO
+&kp F11           &kp F12           &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO
+&kp LCTRL         &kp LEFT_WIN      &kp LEFT_ALT      &lt 1 SPACE       &kp BACKSPACE     &kp ENTER         &lt 2 ENTER       &kp K_UNDO        &kp K_UNDO        &kp K_UNDO
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&page_up_down>;
         };
 
         layer_3 {
