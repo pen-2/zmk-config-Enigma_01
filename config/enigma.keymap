@@ -71,7 +71,7 @@
 &kp LCTRL  &kp TAB    &kp SPC    &lt 1 SPACE  &kp BACKSPACE    &kp ENTER        &lt 2 ENTER      &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&arrow_left_right>;
         };
 
         layer_2 {
