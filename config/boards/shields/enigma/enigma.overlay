@@ -38,7 +38,6 @@
         a-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
-        debounce-piriod = <5>;
         status = "okay";
     };
 
