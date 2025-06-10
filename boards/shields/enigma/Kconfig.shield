@@ -1,2 +1,0 @@
-config SHIELD_Enigma_01
-    def_bool $(shields_list_contains,Enigma_01)
