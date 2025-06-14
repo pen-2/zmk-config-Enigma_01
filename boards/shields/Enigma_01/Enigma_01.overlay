@@ -14,7 +14,7 @@
                 <&gpio1 14 GPIO_ACTIVE_HIGH>,
                 <&gpio1 13 GPIO_ACTIVE_HIGH>,
                 <&gpio1 12 GPIO_ACTIVE_HIGH>;
-　　　　　wakeup-source;
+        wakeup-source;
     };
 
     default_transform: keymap_transform_0 {
