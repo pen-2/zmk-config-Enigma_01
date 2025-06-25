@@ -21,10 +21,7 @@ Enigma_01が手元に届く
 2つの方法を案内します。
 複雑な編集はKeymapEditorが適していますが、初めての編集はZMK Studioがおすすめです。  
 
-[KeymapEditor](#KeymapEditor)
-
-
-|項目|KeymapEditor|ZMK Studio<br>[ZMK Studio](#ZMK-Studio)|  
+|項目|KeymapEditor<br>[編集手順](#KeymapEditor)|ZMK Studio<br>[編集手順](#ZMK-Studio)|  
 |:-:|:-|:-|  
 |事前準備|GitHubのアカウント登録<br>リポジトリのフォーク、登録|特になし|  
 |編集方法|ブラウザ上でマウス操作→ファームウェアの書き出し、転送|ブラウザ上でマウス操作→ブラウザ上で上書き保存|  
