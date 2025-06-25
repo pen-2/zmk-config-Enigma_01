@@ -6,7 +6,7 @@
 1. [使用開始までの手順](#1-使用開始までの手順)  
 2. [キーマップ編集](#2-キーマップ編集)  
   [KeymapEditor](#KeymapEditor)  
-  [ZMK Studio](#ZMK Studio)  
+  [ZMKStudio](#ZMK Studio)  
 3. [Enigma_01の起動](#3-Enigma_01の起動)
 
 
