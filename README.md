@@ -5,7 +5,7 @@
 ## 目次
 1. [使用開始までの手順](#1-使用開始までの手順)  
 2. [キーマップ編集](#2-キーマップ編集)  
-  [KeymapEditor](#KeymapEditor)  
+  [KeymapEditor](#-KeymapEditor)  
   -1. [GitHubリポジトリのフォーク](#-1-GitHubリポジトリのフォーク)
 ## 1. 使用開始までの手順
 Enigma_01が手元に届く
