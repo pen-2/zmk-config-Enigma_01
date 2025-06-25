@@ -29,7 +29,8 @@ Enigma_01が手元に届く
 
 ### KeymapEditor
 #### GitHubリポジトリのフォーク
-ファームウェアはGitHub Actionsで書き出します。   - GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
+ファームウェアはGitHub Actionsで書き出します。  
+ - GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
 
 - 準備できたらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。  
 
