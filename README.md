@@ -5,8 +5,11 @@
 ## 目次
 1. [使用開始までの手順](#1-使用開始までの手順)  
 2. [キーマップ編集](#2-キーマップ編集)  
-  - [KeymapEditor](#2-1-KeymapEditor)  
-    - [GitHubリポジトリのフォーク](#2-1-1-GitHubリポジトリのフォーク)
+  [KeymapEditor](#KeymapEditor)  
+  [ZMK Studio](#ZMK Studio)  
+3. [Enigma_01の起動](#3-Enigma_01の起動)
+
+
 ## 1. 使用開始までの手順
 Enigma_01が手元に届く
 キースイッチとキーキャップを取り付ける
@@ -26,13 +29,13 @@ Enigma_01が手元に届く
 |編集方法|ブラウザ上でマウス操作→ファームウェアの書き出し、転送|ブラウザ上でマウス操作→ブラウザ上で上書き保存|  
 |編集項目| マクロ等も編集できる|標準的な編集ができる|  
 
-### 2-1. KeymapEditor
-#### 2-1-1. GitHubリポジトリのフォーク
+### KeymapEditor
+#### GitHubリポジトリのフォーク
 ファームウェアはGitHub Actionsで書き出します。 GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。
 準備できたらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。
 この時点でmainブランチにcommitやpushをするとGitHub Actionsが実行されて、ファームウェアが自動で書き出されます。
 
-#### 2-1-2. ファームウェアをEnigma_01へ転送
+#### ファームウェアをEnigma_01へ転送
 ファームウェアをダウンロードして、解凍すると以下のファイルが格納されます。
 
 Enigma_01 rgbled_adapter.uf2
@@ -52,7 +55,7 @@ Enigma_01をパソコンと接続してブラウザ上で[ZMK Studio]を開き�
 2. ブラウザ上で[ZMK Studio]を開きます
 3. を選択します
 
-### Enigma_01の起動  
+## 3. Enigma_01の起動  
 最後に、以下の手順でデバイスとペアリングしましょう。
 1. BT_CLR_ALL で 出荷時のペアリング情報をクリアしておく
 2. BT_SEL 0 で メインデバイス と ペアリング する
