@@ -5,8 +5,6 @@
 ## 目次
 1. [使用開始までの手順](#1-使用開始までの手順)  
 2. [キーマップ編集](#2-キーマップ編集)  
-  [KeymapEditor](#KeymapEditor)  
-  [ZMK Studio](#ZMK-Studio)  
 3. [Enigma_01の起動](#3-Enigma_01の起動)
 
 
@@ -23,7 +21,7 @@ Enigma_01が手元に届く
 2つの方法を案内します。
 複雑な編集はKeymapEditorが適していますが、初めての編集はZMK Studioがおすすめです。  
 
-|項目|KeymapEditor|ZMK Studio|  
+|項目|[KeymapEditor](#KeymapEditor)|[ZMK Studio](#ZMK-Studio)|  
 |:-:|:-|:-|  
 |事前準備|GitHubのアカウント登録<br>リポジトリのフォーク、登録|特になし|  
 |編集方法|ブラウザ上でマウス操作→ファームウェアの書き出し、転送|ブラウザ上でマウス操作→ブラウザ上で上書き保存|  
