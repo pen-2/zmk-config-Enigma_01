@@ -30,16 +30,13 @@ Enigma_01が手元に届く
 ### KeymapEditor
 #### GitHubリポジトリのフォーク  
 ファームウェアはGitHub Actionsで書き出します。  
-GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
-準備できたらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。  
-この時点でmainブランチにcommitやpushをするとGitHub Actionsが実行されて、ファームウェアが自動で書き出されます。  
++ GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
++ 準備できたらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。  
 
-#### ファームウェアをEnigma_01へ転送
-ファームウェアをダウンロードして、解凍すると以下のファイルが格納されます。
-
-Enigma_01 rgbled_adapter.uf2
+#### ファームウェアをEnigma_01へ
 
 以下の手順で転送しましょう。
++ GitHub Actionsからファームウェアをダウンロード、解凍する<br>Enigma_01 rgbled_adapter.uf2
 + Enigma_01とパソコンをUSB-Cケーブルで接続します
 + 本体のリセットボタンを2回押します
 + フォルダに「XIAO SENSE」が表示されたらEnigma_01 rgbled_adapter.uf2を貼り付けます
