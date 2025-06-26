@@ -4,8 +4,8 @@
 
 ## 目次
 1. [キーマップ編集](#1-キーマップ編集)  
-　　[編集手順](#KeymapEditor)  
-　　[編集手順](#ZMK-Studio)  
+　[KeymapEditor](#KeymapEditor)  
+　[ZMK Studio](#ZMK-Studio)  
 2. [Enigma_01の起動](#2-Enigma_01の起動)
 
 ## 1. キーマップ編集  
