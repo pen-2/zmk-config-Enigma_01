@@ -3,10 +3,10 @@
 ここではキーマップ編集の手順を説明します。総合案内は[こちら]です。
 
 ## 目次
-[キーマップ編集](#1-キーマップ編集)  
-　[KeymapEditor](#KeymapEditor)  
-　[ZMK Studio](#ZMK-Studio)  
-[Enigma_01の起動](#2-Enigma_01の起動)
++ [キーマップ編集](#1-キーマップ編集)  
+　+ [KeymapEditor](#KeymapEditor)  
+　+ [ZMK Studio](#ZMK-Studio)  
++ [Enigma_01の起動](#2-Enigma_01の起動)
 
 ## キーマップ編集  
 
