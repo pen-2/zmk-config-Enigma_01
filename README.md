@@ -9,11 +9,10 @@
 
 
 ## 1. 使用開始までの手順
-Enigma_01が手元に届く
-キースイッチとキーキャップを取り付ける
+1. Enigma_01を開封、内容物を確認する
+2. キースイッチとキーキャップを取り付ける
+3. デバイスと接続して動作確認する
 パソコンでキーマップの編集をする
-　A. KeymapEditorでビルド、転送
-　B. ZMK Studioで簡易編集
 
 
 ## 2. キーマップ編集  
@@ -30,29 +29,29 @@ Enigma_01が手元に届く
 ### KeymapEditor
 #### GitHubリポジトリのフォーク  
 ファームウェアはGitHub Actionsで書き出します。  
-+ GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
-+ 準備できたらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。  
+1. GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
+2. 準備できたらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。  
 
 #### ファームウェアをEnigma_01へ
 
 以下の手順で転送しましょう。
-+ GitHub Actionsからファームウェアをダウンロード、解凍する
-+ Enigma_01とパソコンをUSB-Cケーブルで接続します
-+ 本体のリセットボタンを2回押します
-+ フォルダに「XIAO SENSE」が表示されたらEnigma_01 rgbled_adapter.uf2を貼り付けます
-+ 接続が解除、数秒後に復帰します
+1. GitHub Actionsからファームウェアをダウンロード、解凍する
+2. Enigma_01とパソコンをUSB-Cケーブルで接続します
+3. 本体のリセットボタンを2回押します
+4. フォルダに「XIAO SENSE」が表示されたらEnigma_01 rgbled_adapter.uf2を貼り付けます
+5. 接続が解除、数秒後に復帰します
 これでファームウェアの転送は完了しました。
 
 ### ZMK Studio  
 #### ブラウザ上で接続
 Enigma_01をパソコンと接続してブラウザ上で[ZMK Studio]を開きます。
 以下の手順で接続しましょう。
-+ Enigma_01とパソコンをUSB-Cケーブルで接続します
-+ ブラウザ上で[ZMK Studio]を開きます
-+ を選択します
+1. Enigma_01とパソコンをUSB-Cケーブルで接続します
+2. ブラウザ上で[ZMK Studio]を開きます
+3. を選択します
 
 ## 3. Enigma_01の起動  
 最後に、以下の手順でデバイスとペアリング
-+ BT_CLR_ALLで出荷時のペアリング情報をクリアする
-+ BT_SEL0でメインデバイスとペアリングする
-+ BT_SEL1でサブデバイスとペアリングする
+1. BT_CLR_ALLで出荷時のペアリング情報をクリアする
+2. BT_SEL0でメインデバイスとペアリングする
+3. BT_SEL1でサブデバイスとペアリングする
