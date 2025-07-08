@@ -157,7 +157,8 @@
             &key_physical_attrs 100 100 900 400 0 0 0  // RC(6,3)
         >;
     };
-    enigma_position_map {
+
+    position_map {
         compatible = "zmk,physical-layout-position-map";
 
         map_a: enigma_layout_a {
