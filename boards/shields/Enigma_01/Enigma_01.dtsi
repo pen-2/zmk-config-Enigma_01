@@ -161,17 +161,17 @@
         compatible = "zmk,physical-layout-position-map";
 
         enigma_layout_a: enigma_layout_a {
-            physical-layout = <&a_layout>;
+            physical-layout = <&enigma_layout_a>;
             positions = <38>;
         };
 
         enigma_layout_b: enigma_layout_b {
-            physical-layout = <&b_layout>;
+            physical-layout = <&enigma_layout_b>;
             positions = <39>;
         };
 
         enigma_layout_c: enigma_layout_c {
-            physical-layout = <&c_layout>;
+            physical-layout = <&enigma_layout_c>;
             positions = <39>;
         };
     };
