@@ -2,7 +2,7 @@
 
 / {
     // 親指キー1.0u
-    enigma_layout_a: enigma_layout_a {
+    layout_a: layout_a {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_01 ThumbKey 1.0u";
         transform = <&default_transform>;
@@ -55,7 +55,7 @@
     };
 
     // 親指キー1.5u
-    enigma_layout_b: enigma_layout_b {
+    layout_b: layout_b {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_01 ThumbKey 1.5u";
         transform = <&default_transform>;
@@ -107,7 +107,7 @@
     };
 
     // 親指キー2.0u
-    enigma_layout_c: enigma_layout_c {
+    layout_c: layout_c {
         compatible = "zmk,physical-layout";
         display-name = "Enigma_01 ThumbKey 2.0u";
         transform = <&default_transform>;
@@ -161,18 +161,18 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        map_a: enigma_layout_a {
-            physical-layout = <&enigma_layout_a>;
+        map_a: map_a {
+            physical-layout = <&layout_a>;
             positions = <38>;
         };
 
-        map_b: enigma_layout_b {
-            physical-layout = <&enigma_layout_b>;
+        map_b: map_b {
+            physical-layout = <&layout_b>;
             positions = <39>;
         };
 
-        map_c: enigma_layout_c {
-            physical-layout = <&enigma_layout_c>;
+        map_c: map_c {
+            physical-layout = <&layout_c>;
             positions = <39>;
         };
     };
