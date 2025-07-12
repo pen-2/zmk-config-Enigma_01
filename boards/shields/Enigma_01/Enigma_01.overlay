@@ -77,7 +77,7 @@
     chosen {
         zmk,kscan = &kscan0;
         // layout_a = 1.0配列 layout_b = 1.5配列 layout_c = 2.0配列
-        zmk,physical-layout = &layout_a;
+        zmk,physical-layout = &layout_c;
         zmk,studio-rpc = &studio_usb;
     };
 };
