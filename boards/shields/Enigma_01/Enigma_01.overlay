@@ -43,7 +43,7 @@
         >;
     };
 
-	    transform_c: keymap_transform_c {
+	  transform_c: keymap_transform_c {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
