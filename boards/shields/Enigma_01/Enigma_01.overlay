@@ -17,7 +17,7 @@
         wakeup-source;
     };
 
-    transform_a: transform_a {
+    default_transform: keymap_transform {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
