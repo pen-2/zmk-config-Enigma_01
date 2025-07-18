@@ -4,7 +4,7 @@
 #include "Enigma_01.dtsi"
 
 / {
-    kscan0: kscan_0 {
+    kscan_v0: kscan_v0 {
         compatible = "zmk,kscan-gpio-charlieplex";
         interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>,
@@ -17,7 +17,7 @@
         wakeup-source;
     };
 
-    default_transform: keymap_transform {
+    transform_v0: transform_v0 {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
@@ -49,7 +49,7 @@
     };
 
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,kscan = &kscan_v0;
         zmk,physical-layout = &layout_a;  // layout_a = 1.0配列 layout_b = 1.5配列 layout_c = 2.0配列
         zmk,studio-rpc = &studio_usb;
     };
