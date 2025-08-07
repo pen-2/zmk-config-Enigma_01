@@ -6,6 +6,7 @@
 / {
     kscan_v0: kscan_v0 {
         compatible = "zmk,kscan-gpio-charlieplex";
+        wakeup-source;
         interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>,
                 <&gpio0 4 GPIO_ACTIVE_HIGH>,
@@ -14,7 +15,6 @@
                 <&gpio1 14 GPIO_ACTIVE_HIGH>,
                 <&gpio1 13 GPIO_ACTIVE_HIGH>,
                 <&gpio1 12 GPIO_ACTIVE_HIGH>;
-        wakeup-source;
     };
 
     transform_v0: transform_v0 {
