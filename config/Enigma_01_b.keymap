@@ -8,6 +8,7 @@
 / {
     behaviors {
         // Keep the original key_press behavior for ZMK core components
+
         original_key_press: original_key_press {
             compatible = "zmk,behavior-key-press";
             #binding-cells = <1>;
@@ -15,6 +16,7 @@
         };
 
         // Override the existing &kp behavior to use our custom implementation
+
         kp: key_press {
             compatible = "zmk,behavior-layout-shift-key-press";
             #binding-cells = <1>;
@@ -67,7 +69,7 @@
 
         default_layer {
             bindings = <
-           &kp N3        &kp N4
+           &kp ESC       &kp N4
 &mt TAB Q  &kp W         &kp E      &kp R        &kp T          &kp Y  &kp U      &kp I        &kp O            &kp P
 &kp A      &kp S         &kp D      &kp F        &kp G          &kp H  &kp J      &kp K        &kp L            &kp MINUS
 &kp Z      &kp X         &kp C      &kp V        &kp B          &kp N  &kp M      &kp COMMA    &kp DOT          &kp SLASH
